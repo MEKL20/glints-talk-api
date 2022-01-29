@@ -1,2 +1,1 @@
-release: node app.js
-web: react-script start
+web: node app.js
