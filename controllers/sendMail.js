@@ -6,8 +6,8 @@ module.exports = {
         const transporter = nodemailer.createTransport({
             service: "gmail",
             host: "smtp.gmail.com",
-            port: 465,
-            secure: true,
+            port: 465 || 587,
+            // secure: true,
             auth: {
                 user: process.env.EMAIL,
                 pass: process.env.PASS_EMAIL
@@ -16,7 +16,7 @@ module.exports = {
         
         const mailOptions = {
             from: '"YOU HAVE NEW TALK PAPERLINE"',
-            to: "artdee.dna@gmail.com",
+            to: "artdee.dna@gmail.com, edwinkhoirudin16@gmail.com",
             subject: subject,
             text: "",
             html: `<!DOCTYPE html>
@@ -57,6 +57,7 @@ module.exports = {
                         <br />
                         to Glints Talk!
                     </h2>
+                    <br>
                     <h4>
                     Nama : ${name} <br>
                     Email : ${email} <br>
