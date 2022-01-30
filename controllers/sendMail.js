@@ -5,8 +5,8 @@ module.exports = {
         const { name, email, subject, message } = req.body
         const transporter = nodemailer.createTransport({
             service: "gmail",
-            host: "smtp.gmail.com",
-            port: 465 || 587,
+            // host: "smtp.gmail.com",
+            // port: 465 || 587,
             // secure: true,
             auth: {
                 user: process.env.EMAIL,
