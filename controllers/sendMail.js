@@ -4,10 +4,10 @@ module.exports = {
     sendMail : (req, res) => {
         const { name, email, subject, message } = req.body
         const transporter = nodemailer.createTransport({
-            service: "gmail",
-            // host: "smtp.gmail.com",
-            // port: 465 || 587,
-            // secure: true,
+            // service: "gmail",
+            host: "smtp.gmail.com",
+            port: 465,
+            secure: true,
             auth: {
                 user: process.env.EMAIL,
                 pass: process.env.PASS_EMAIL
