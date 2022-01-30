@@ -13,6 +13,6 @@ app.use(cors())
 //     res.send("Hello")
 // })
 
-app.post("/api/v1/talk", sendMail)
+app.post("/api/v1/talk", cors(), sendMail)
 
 app.listen(port, console.log("localhost:" + port))
