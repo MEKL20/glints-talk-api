@@ -57,12 +57,12 @@ module.exports = {
                         <br>
                         to Glints Talk!
                     </h2>
-                    <br>
-                    <h4>
+                    
+                    <p>
                     Nama : ${name} <br>
                     Email : ${email} <br>
                     Message : ${message} <br>
-                    </h4>
+                    </p>
                     </div>
                 </body>
                 </html>`
