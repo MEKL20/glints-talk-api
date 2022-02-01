@@ -14,7 +14,7 @@ module.exports = {
         })
         
         const mailOptions = {
-            from: '"YOU HAVE NEW TALK PAPERLINE" GLINTS-TALK@',
+            from: '"YOU HAVE NEW TALK PAPERLINE" GLINTS-TALK@gmail.com',
             to: process.env.RECEIVE_EMAIL,
             subject: subject,
             text: "",
