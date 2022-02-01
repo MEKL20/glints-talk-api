@@ -15,7 +15,7 @@ module.exports = {
         })
         
         const mailOptions = {
-            from: '"YOU HAVE NEW TALK PAPERLINE" GLINTS-TALK@gmail.com',
+            from: '"YOU HAVE NEW TALK PAPERLINE" GLINTS-TALK@',
             to: process.env.RECEIVE_EMAIL,
             subject: subject,
             text: "",
@@ -39,7 +39,7 @@ module.exports = {
                 
                     .body-message {
                         background-color: salmon;
-                        display: flex;
+                        display: block;
                         justify-content: center;
                         width: fit-content;
                         padding: 24px 56px;
@@ -56,13 +56,12 @@ module.exports = {
                         Welcome
                         <br>
                         to Glints Talk!
-                    </h2>
-                    
-                    <p>
+                    </h2><br>
+                    <h4>
                     Nama : ${name} <br>
                     Email : ${email} <br>
                     Message : ${message} <br>
-                    </p>
+                    </h4>
                     </div>
                 </body>
                 </html>`
